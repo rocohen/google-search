@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.logo svg {
+  padding-left: 2em;
+}
+
+.logo-subtext {
+  font-family: 'Roboto', arial, sans-serif;
+  color: #4285f4;
+  display: inline-block;
+  position: relative;
+  top: -20px;
+  right: 126px;
+}
+
+/* ----------- Search bar --------------*/
+.search-bar {
+  align-items: center;
+  justify-content: space-evenly;
+  padding: .6em 0;
+  width: 33.000em;
+}
+
+.search-bar input {
+  width: 65%;
+}
+
+form button,
+form button:visited {
+  background-color: #fff;
+  border: none;
+  height: 26px;
+  outline: none;
+}
+
+form button:hover,
+form button:active {
+  cursor: pointer;
+}
+
+.cam-icon {
+    height: 24px;
+    width: 24px;
+    background: url(//www.gstatic.com/images/icons/material/system/2x/photo_camera_grey600_24dp.png) 0 0 no-repeat;
+    background-size: 24px;
+}
+
+
+/*-------------- Responsive styles -------------*/
+
+@media only screen and (max-width: 639px) {
+  .logo-subtext {
+    top: -12px;
+    right: 48px;
+    font-size: .9rem;
+  }
+  .search-bar {
+    width: 28.500em;
+  }
+
+  .cam-icon {
+    height: 20px;
+    width: 20px;
+    background-size: 20px;
+  }
+
+  .search-bar img {
+  width: 1.3rem;
+  }
+}

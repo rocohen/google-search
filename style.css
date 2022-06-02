@@ -1,0 +1,200 @@
+html {
+  height: 100%;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #fff;
+  margin: 0 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.navbar ul {
+ display: flex;
+ justify-content: flex-end;
+ padding: 0 1.5em 0;
+ list-style: none;
+}
+
+.navbar li:nth-child(2) {
+  margin-left: 1.5em;
+}
+
+.navbar a,
+.navbar a:visited {
+  text-decoration: none;
+  color: rgba(0,0,0,0.87);
+  font-weight: 200;
+  font-size: .8rem;
+}
+
+.navbar a:hover,
+.navbar a:active {
+  opacity: .85;
+  text-decoration: underline;
+}
+
+.container {
+  text-align: center;
+  flex: 1;
+}
+
+.logo svg {
+  margin-top: 6.8em;
+  margin-bottom: 1.2em;
+  width: 400px;
+  height: 90px
+}
+
+
+/* ----------- Search bar --------------*/
+.search-bar {
+  border: 1px solid #dfe1e5;
+  margin: auto;
+  margin-bottom: 2em;
+  width: 35.000em;
+  border-radius: 24px;
+  padding: .6em .9em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.search-bar:hover {
+  box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+  border-color: rgba(223,225,229,0);
+}
+
+.search-bar img {
+  width: 1.5rem;
+}
+
+.search-bar input {
+  width: 88%;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+}
+
+/*---------------- Buttons ----------------*/
+
+.search-btn, 
+.lucky-btn {
+  background-color: #f2f2f2;
+  border: 1px solid #f2f2f2;
+  border-radius: 4px;
+  color: #5F6368;
+  padding: .6em 1em;
+  font-size: .9rem;
+  outline: none;
+}
+
+.search-btn:hover,
+.lucky-btn:hover {
+  box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+  background-image: -webkit-linear-gradient(top,#f8f8f8,#f1f1f1);
+  background-color: #f8f8f8;
+  border: 1px solid #c6c6c6;
+  color: #222
+}
+
+.lucky-btn {
+  margin-left: .5em;
+}
+
+
+.container p {
+  color: #222;
+  font-size: .8rem;
+  margin-top: 3em;
+}
+
+.container p a {
+  color: #1a0dab;
+  text-decoration: none;
+}
+
+.container p a:hover {
+  text-decoration: underline;
+}
+
+/*---------------- Footer -----------------*/
+footer {
+  background-color: #F2F2F2;
+  color:  rgba(0,0,0,.54);
+  font-size: .9rem;
+}
+
+footer div {
+  border-top: 1px solid #e4e4e4;
+}
+
+footer div:last-child {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer div:last-child ul {
+ display: flex;
+ list-style: none;
+}
+
+footer div:last-child ul:first-child {
+  padding-left: 1.5em;
+}
+
+footer div:last-child li:not(:first-child) {
+  margin-left: 1.5em;
+}
+
+.termsAndpref {
+  padding-right: 1.5em;
+}
+
+footer a,
+footer a:visited {
+  text-decoration: none;
+  color: #5f6368
+}
+
+footer a:hover,
+footer a:active {
+  text-decoration: underline;
+}
+
+.location {
+  padding-left: 1.5em;
+}
+
+/*-------------- Responsive styles -------------*/
+
+@media only screen and (max-width: 767px) {
+  footer div:last-child ul:first-child {
+    display: none;
+  }
+
+  footer div:last-child {
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 639px) {
+  .logo svg {
+    width: 200px;
+    margin-bottom: 0;
+  }
+
+  .search-bar {
+    width: 25.000em;
+  }
+
+  .search-btn, 
+  .lucky-btn {
+    font-size: .8rem;
+  }
+
+  footer {
+    font-size: .85rem;
+  }
+}
